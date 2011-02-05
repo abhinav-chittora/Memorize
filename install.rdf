@@ -1,21 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>memorize@abhinav.chittora</em:id>
-    <em:type>2</em:type>
-    <em:name>memorize</em:name>
-    <em:version>0.1b</em:version>
-    <em:creator>Abhinav Chittora</em:creator>
-    <em:contributor></em:contributor>
-    <em:description>The extension will enable user to keep voice bookmark for a webpage.</em:description>
-    <em:aboutURL>chrome://memorize/content/about.xul</em:aboutURL>
-    <em:optionsURL>chrome://memorize/content/options.xul</em:optionsURL>
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
-        <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>4.0.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-  </Description>
-</RDF>
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="memorize@abhinav.chittora"
+                   em:name="Memorize"
+                   em:version="0.1b"
+                   em:creator="Abhinav Chittora"
+                   em:description="The extension will enable user to keep voice bookmark for a webpage."
+                   em:homepageURL="http://memorizeff.wordpress.com/"
+                   em:optionsURL="chrome://memorize/content/options.xul"
+                   em:aboutURL="chrome://memorize/content/about.xul">
+    <em:targetApplication RDF:resource="rdf:#$OZI0w"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$OZI0w"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="4.0.*" />
+</RDF:RDF>
