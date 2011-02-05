@@ -1,0 +1,8 @@
+<!ENTITY memorize.label "Your localized menuitem">
+<!ENTITY memorizeContext.label "Your Menuitem">
+<!ENTITY memorizeContext.accesskey "Y">
+<!ENTITY memorizeToolbarButton.label "Your Toolbar Button">
+<!ENTITY memorizeToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY memorizeSidebar.label "Your Sidebar">
+<!ENTITY memorizeToolbar.name  "example">
+<!ENTITY memorizeToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &memorizeToolbar.name;">

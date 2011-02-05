@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://memorize/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://memorize/locale/overlay.dtd">
+<overlay id="memorize-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="memorize-strings" src="chrome://memorize/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="memorize-hello" label="&memorize.label;"
+              oncommand="memorize.onMenuItemCommand(event);"/>
+  </menupopup>
+
+  <popup id="contentAreaContextMenu">
+    <menuitem id="context-memorize" label="&memorizeContext.label;"
+              accesskey="&memorizeContext.accesskey;"
+              insertafter="context-stop"
+              oncommand="memorize.onMenuItemCommand(event)"/>
+  </popup>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="memorize-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+    label="&memorizeToolbarButton.label;" tooltiptext="&memorizeToolbarButton.tooltip;"
+    oncommand="memorize.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+
+  <toolbox id="navigator-toolbox">
+    <toolbar class="chromeclass-toolbar" toolbarname="&memorizeToolbar.name;" customizable="true" id="memorize-toolbar">
+      <label value="&memorizeToolbar.label;"/>
+    </toolbar>
+  </toolbox>
+
+  <menupopup id="viewSidebarMenu">
+    <menuitem observes="viewSidebar_memorize" />
+  </menupopup>
+
+  <broadcasterset id="mainBroadcasterSet">
+    <broadcaster id="viewSidebar_memorize"
+                 label="&memorizeSidebar.label;"
+                 autoCheck="false"
+                 type="checkbox"
+                 group="sidebar"
+                 sidebarurl="chrome://memorize/content/ff-sidebar.xul"
+                 sidebartitle="&memorizeSidebar.label;"
+                 oncommand="toggleSidebar('viewSidebar_memorize');" />
+  </broadcasterset>
+
+</overlay>

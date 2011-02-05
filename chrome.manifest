@@ -1,0 +1,7 @@
+content   memorize                 chrome/content/
+skin      memorize   classic/1.0   chrome/skin/
+locale    memorize   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://memorize/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://memorize/skin/overlay.css
