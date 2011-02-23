@@ -9,10 +9,13 @@
     <vbox>
       <text value="memorize" style="font-weight: bold; font-size: x-large;"/>
       <text value="&version; 1.0"/>
+      <description width="300"> An Mozilla Firefox extension for Voice Bookmarking.</description>
       <separator class="thin"/>
       <text value="&createdBy;" style="font-weight: bold;"/>
       <text value="Abhinav Chittora"/>
       <separator class="thin"/>
+      <text value="&homepage;" style="font-weight:bold;" />
+      <text value="Click here !!" class="text-link" href="http://memorizeff.wordpress.com"  />
     </vbox>
   </groupbox>
 </dialog>
